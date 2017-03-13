@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Binding</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js">
+    </script>
+  </head>
+  <body>
+    <div ng-app>
+      <h1>Binding</h1>
+        <input type="text" ng-model="message" ng-init="message = 'hello'">
+        <p ng-bind='message'></p>
+        <p ng-bind="message + ' ' + message"></p>
+        <p ng-bind="message == 'hello'"></p>
+        <p ng-bind='1+3'></p>
+    </div>
+  </body>
+</html>
